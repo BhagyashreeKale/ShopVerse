@@ -36,7 +36,7 @@ const App = () => (
               <Toaster />
               <Sonner />
               <BrowserRouter
-  basename={import.meta.env.PROD ? "/zenith-commerce" : "/"}
+  basename={import.meta.env.PROD ? "/ShopVerse" : "/"}
 >
                 <Routes>
                   <Route path="/" element={<Index />} />
