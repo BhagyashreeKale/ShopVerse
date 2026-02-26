@@ -35,7 +35,9 @@ const App = () => (
             <CompareProvider>
               <Toaster />
               <Sonner />
-              <BrowserRouter basename="/zenith-commerce">
+              <BrowserRouter
+  basename={import.meta.env.PROD ? "/zenith-commerce" : "/"}
+>
                 <Routes>
                   <Route path="/" element={<Index />} />
                   <Route path="/product/:slug" element={<ProductDetail />} />
